@@ -1,7 +1,5 @@
 import React from 'react';
 
-import { connect } from 'react-redux';
-
 import Header from './components/Header';
 import AddedFeatures from './components/AddedFeatures';
 import AdditionalFeatures from './components/AdditionalFeatures';
@@ -21,7 +19,7 @@ const App = () => {
     <div className="boxes">
       <div className="box">
         <Header />
-        {/* <AddedFeatures car={state.car} /> */}
+        <AddedFeatures />
       </div>
       {/* <div className="box">
         <AdditionalFeatures additionalFeatures={state.additionalFeatures} />
