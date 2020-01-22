@@ -5,12 +5,12 @@ import App from './App';
 import { createStore} from 'redux';
 import {Provider} from 'react-redux';
 
-import {initiailState, carReducer } from './reducers/carReducer';
+import { carReducer } from './reducers/carReducer';
 
 import 'bulma/css/bulma.css';
 import './styles.scss';
+
 const store = createStore(carReducer);
-console.log(store.getState());
 
 const rootElement = document.getElementById('root');
 ReactDOM.render(
