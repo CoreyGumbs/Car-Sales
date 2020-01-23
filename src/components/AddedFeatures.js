@@ -4,6 +4,8 @@ import { connect } from 'react-redux';
 
 import AddedFeature from './AddedFeature';
 
+import {removeFeatures} from '../actions/featuresActions';
+
 const AddedFeatures = props => {
   return (
     <div className="content">
