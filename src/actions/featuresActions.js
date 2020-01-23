@@ -11,11 +11,12 @@ export const addAdditionalFeature = feature => {
 };
 
 
-export const removeFeatures = id => {
+export const removeFeatures = feature => {
     return {
         type: 'REMOVE_FEATURE',
         payload: { 
-            id: id
+            id: feature.id,
+            price: feature.price
         }
     }
 }
